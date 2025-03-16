@@ -1,5 +1,5 @@
 import React from "react";
-import IMG from "../assets/homeIMG.jpg";
+import IMG from "../assets/SS.png";
 import Btn from "../utility/btn";
 import Animation from "../utility/animations";
 import TypingEffect from "../utility/typeWriter";
