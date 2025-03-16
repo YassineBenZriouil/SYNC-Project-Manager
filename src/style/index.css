@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Cuneiform&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Cuneiform&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Typography Optimization */
+
+/* Main Headings: Oswald for strong impact and clarity */
+h1,
+h2 {
+    font-family: "Oswald", sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Secondary Headings: Nunito for a balanced look */
+h3,
+h4 {
+    font-family: "Nunito", sans-serif;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+/* Tertiary Headings: Lato for clean readability */
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+/* Body Text */
+p,
+li,
+td,
+th {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Code Elements */
+code,
+pre,
+kbd,
+samp {
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.9em;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+
+/* Form Elements */
+input,
+select,
+button,
+textarea,
+label {
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+}
+
+button {
+    font-weight: 500;
+}
+
+/* Navigation */
+nav,
+.nav,
+.menu {
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+/* Quotes and Testimonials */
+blockquote,
+q,
+cite {
+    font-family: "Ubuntu", sans-serif;
+    font-style: italic;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* Small Text and Captions */
+small,
+figcaption,
+.caption,
+.text-small {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+/* Decorative Text */
+.display,
+.hero-text,
+.banner {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    font-weight: 500;
+}
+
+/* Definition Lists */
+dt {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+}
+
+dd {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+/* Table Headers */
+thead th {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+p {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* Define custom scrollbar styles */
+@layer utilities {
+    .custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #60a5fa #172554;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #172554;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #60a5fa;
+        border-radius: 10px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #60a5fa;
+    }
+}
