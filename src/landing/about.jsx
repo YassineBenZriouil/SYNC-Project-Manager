@@ -1,6 +1,7 @@
 import React from "react";
 import Btn from "../utility/btn.jsx";
 import Animations from "./../utility/animations";
+import { Link } from "react-router-dom";
 
 export default function About() {
     return (
@@ -60,7 +61,7 @@ export default function About() {
                             {
                                 icon: "fa-list-check",
                                 title: "Task Management",
-                                text: "Create and assign tasks effortlessly.",
+                                text: "Create and assign tasks effortlessly track progress.",
                             },
                             {
                                 icon: "fa-arrows-up-down-left-right",
@@ -93,7 +94,9 @@ export default function About() {
                         <h3 className="text-2xl font-bold mb-6">
                             Ready to simplify your project management?
                         </h3>
-                        <Btn in="Get Started Today" />
+                        <Link to="/register">
+                            <Btn in="Get Started Today" />
+                        </Link>
                     </div>
                 </div>
             </Animations>

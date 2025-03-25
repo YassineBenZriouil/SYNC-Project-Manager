@@ -3,6 +3,7 @@ import IMG from "../assets/SS.png";
 import Btn from "../utility/btn";
 import Animation from "../utility/animations";
 import TypingEffect from "../utility/typeWriter";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -29,7 +30,9 @@ export default function Home() {
                                 the world's #1 task manager and to-do list app.
                             </p>
                             <div className="self-center md:self-start">
-                                <Btn in="Get Started" />
+                                <Link to="/register">
+                                    <Btn in="Get Started Today" />
+                                </Link>
                             </div>
                         </div>
                         {/* Image Section */}
