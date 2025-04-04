@@ -164,7 +164,7 @@ export default function Nav({ theme, setTheme }) {
                             <li className="mt-6 mb-2">
                                 <div className="px-4 py-2">
                                     {isOpen ? (
-                                        <div className="flex items-center">
+                                        <div className="flex items-center ">
                                             <i className="fa-solid fa-star text-amber-400"></i>
                                             <span className="ml-3 font-semibold text-sm uppercase tracking-wider">
                                                 Favorites
